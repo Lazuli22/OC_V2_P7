@@ -1,2 +1,2 @@
-# OC_V2_V7
+# OC_V2_P7
 Projet sur les algorithmes
