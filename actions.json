@@ -1,0 +1,62 @@
+[{
+        "name": "Action-1",
+        "cost": "20",
+        "percentage": "5",
+        "benefits": "1"
+
+    },
+    {
+        "name": "Action-2",
+        "cost": "30",
+        "percentage": "10",
+        "benefits": "3"
+    },
+    {
+        "name": "Action-3",
+        "cost": "50",
+        "percentage": "3",
+        "benefits": "1.5"
+    },
+    {
+        "name": "Action-4",
+        "cost": "70",
+        "percentage": "20",
+        "benefits": "14"
+    },
+    {
+        "name": "Action-5",
+        "cost": "60",
+        "percentage": "17",
+        "benefits": "10.2"
+    },
+    {
+        "name": "Action-6",
+        "cost": "80",
+        "percentage": "25",
+        "benefits": "20"
+    },
+    {
+        "name": "Action-7",
+        "cost": "22",
+        "percentage": "7",
+        "benefits": "1.54"
+    },
+    {
+        "name": "Action-8",
+        "cost": "26",
+        "percentage": "11",
+        "benefits": "2.86"
+    },
+    {
+        "name": "Action-9",
+        "cost": "48",
+        "percentage": "13",
+        "benefits": "6.24"
+    },
+    {
+        "name": "Action-10",
+        "cost": "34",
+        "percentage": "27",
+        "benefits": "9.18"
+    }
+]
