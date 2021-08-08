@@ -5,7 +5,6 @@ import time
 class Strategy(metaclass=abc.ABCMeta):
 
     def __init__(self, **kwargs):
-        print(kwargs)
         self.data = kwargs
         self.start_time = None
 

@@ -13,9 +13,9 @@ class Share(Serializable):
             benefits
             ):
         self.name = name
-        self.cost = cost
-        self.percentage = percentage
-        self.benefits = benefits
+        self.cost = float(cost)
+        self.percentage = float(percentage)
+        self.benefits = float(benefits)
 
     def serialize(self):
         """
@@ -24,18 +24,13 @@ class Share(Serializable):
         """
         return{
            "name": self.name,
-           "cost": self.cost,
-           "percentage": self.percentage,
+           "cost": self.cost,         "percentage": self.percentage,
            "benefits": self.benefits
         }
 
     def __repr__(self) -> str:
         """ function that represents a share"""
         return (
-            f"{self.name}, "
-            f"{self.cost}, "
-            f"{self.percentage}, "
-            f"{self.benefits} "
+            f"|| {self.name} | {self.cost} | {self.percentage} | {self.benefits} ||"
         )
-
 

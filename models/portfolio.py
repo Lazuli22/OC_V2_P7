@@ -1,5 +1,6 @@
 from models.share import Share
 import json
+import csv
 
 
 class Portfolio:
@@ -22,6 +23,16 @@ class Portfolio:
             data = json.load(f)
         for elt in data:
             self.actions_list.append(Share(**elt))
+
+    def load_from_csv(self, name):
+        f = open(name)
+        myReader = csv.reader(f, delimiter=";")
+        myReader.__next__()
+        for row in myReader:
+            if(float(row[1]) > 0.0):
+                self.actions_list.append(
+                    Share(row[0], row[1], row[2], row[3]))
+        #print(self.actions_list)
 
     def __iter__(self):
         self.size = 0

@@ -7,7 +7,7 @@ from models.combination import Combination
 
 class BruteForce(Strategy):
 
-    def __init__(self, portfolio: Portfolio, max_cost : float):
+    def __init__(self, portfolio: Portfolio, max_cost: float):
         super().__init__(portfolio=portfolio)
         self.max_cost = max_cost
 
@@ -18,7 +18,8 @@ class BruteForce(Strategy):
         for r in range(2, len(self.data['portfolio']) + 1):
             for e in combinations(self.data['portfolio'], r):
                 one_comb = Combination(e)
-                if (one_comb.cost <= self.max_cost and one_comb.benefits > the_comb.benefits):
+                if (one_comb.cost <= self.max_cost and
+                        one_comb.benefits > the_comb.benefits):
                     the_comb = one_comb
         self.stop()
         return the_comb
