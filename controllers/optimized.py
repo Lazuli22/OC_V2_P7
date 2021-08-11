@@ -27,6 +27,6 @@ class Optimized(Strategy):
                 list_share.append(share)
                 spent_money += share.cost
         one_comb = Combination(list_share)
-        print(f"Meilleure combinaison :{one_comb}")
+        print(f"{one_comb}")
         self.stop()
         return one_comb

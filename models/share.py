@@ -31,6 +31,5 @@ class Share(Serializable):
     def __repr__(self) -> str:
         """ function that represents a share"""
         return (
-            f"|| {self.name} | {self.cost} | {self.percentage} | {self.benefits} ||"
+            f"[{self.name}, {self.cost}, {self.benefits}]"
         )
-

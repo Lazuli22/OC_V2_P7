@@ -1,5 +1,6 @@
 from typing import List
 from models.share import Share
+from terminaltables import AsciiTable
 
 
 class Combination:
@@ -23,11 +24,14 @@ class Combination:
 
     def __repr__(self) -> str:
         """ function that represents a combination"""
-        comp = []
+        comp = [("Shares", "Cost", "Benefits")]
         for e in self.shares:
-            comp.append(e.__repr__())
+            comp.append([e.name,
+                        e.cost,
+                        e.benefits])
+        table_instance = AsciiTable(comp, "Meilleure combinaison")
+        print(table_instance.table)
         return (
-            f"Combination : {comp}, "
             f"Cost of the Combination : {self.cost}, "
             f"Benefits of the Combination : {self.benefits} "
             "\n"

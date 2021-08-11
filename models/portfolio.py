@@ -32,7 +32,7 @@ class Portfolio:
             if(float(row[1]) > 0.0):
                 self.actions_list.append(
                     Share(row[0], row[1], row[2], row[3]))
-        #print(self.actions_list)
+        # print(self.actions_list)
 
     def __iter__(self):
         self.size = 0
@@ -46,4 +46,3 @@ class Portfolio:
 
     def __len__(self):
         return len(self.actions_list)
-
